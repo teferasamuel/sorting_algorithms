@@ -1,7 +1,6 @@
 #include "sort.h"
 
 /**
- * <<<<<<< HEAD
  *radix_sort - sort array with radix method
  *@array: array to sort
  *@size: size of the array
@@ -44,7 +43,6 @@ void radix_sort(int *array, size_t size)
 		print_array(array, size);
 	}
 }
-=======
 /**
  *max_num - function reutrn max integer
  *@array: pointers array
