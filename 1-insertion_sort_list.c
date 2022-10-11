@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- *insertion_sort_list - sort a double linked list with  Insertion sort algorithm
+ *insertion_sort_list - sort a double linked list with
  *@list: double pointer to the list
  */
 void insertion_sort_list(listint_t **list)
@@ -12,15 +12,15 @@ void insertion_sort_list(listint_t **list)
 	if  (aux2 == NULL)
 		return;
 	aux2 = aux2->next;
-	while (aux2 !=NULL)
+	while (aux2 != NULL)
 	{
 		i = aux2;
 		aux2 = aux2->next;
 		while (i->prev != NULL && i->n < i->prev->n)
 		{
-			if(i->next != NULL)
+			if (i->next != NULL)
 				i->next->prev = i->prev;
-			if(i->prev->prev != NULL)
+			if (i->prev->prev != NULL)
 				i->prev->prev->next = i;
 			else
 				*list = i;
